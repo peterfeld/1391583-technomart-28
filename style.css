@@ -228,7 +228,7 @@ nav a:active{
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
     color: var(--wight);
-    background-color: var(--basic-red;
+    background-color: var(--basic-red)
 }
 
 /*Contacts*/
