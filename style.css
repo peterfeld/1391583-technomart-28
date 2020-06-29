@@ -139,9 +139,7 @@ nav .main-navigation {
     opacity: 0.3;
 }
 
-/* почему-то не меняется цвет placeholder */
-
-input[type="placeholder"].header-search { 
+.header-search::placeholder {
     color: var(--basic-white);
 }
 
