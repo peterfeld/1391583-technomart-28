@@ -767,6 +767,7 @@ nav .main-navigation {
     line-height: 30px;
     text-transform: uppercase;
     font-weight: normal;
+    margin: 0px;
 }
 
 .special-title {
@@ -859,6 +860,8 @@ nav .main-navigation {
     background-color: var(--catalog-grey);
     padding-left: 29px;
     margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }    
 
 .page-catalog {
@@ -1125,9 +1128,70 @@ nav .main-navigation {
     margin-bottom: 28px;
 }
 
+.sort .sort-item {
+    display: flex;
+    color: var(--basic-black);
+    opacity: 0.3;
+    border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort .sort-triangle {
+    opacity: 0.3;  
+} 
+
+.sort .sort-active {
+    color: var(--basic-red);
+    fill: var(--basic-red);
+    border: 0px;
+    opacity: 1;
+}
+
+.sort .sort-item:hover,
+.sort .sort-item:focus {
+    color: var(--basic-black);
+    opacity: 1;
+    border-bottom: 1px solid var(--basic-red);
+}
+
+.sort .sort-triangle:hover,
+.sort .sort-triangle:focus {
+    opacity: 1;
+    fill: var(--basic-black);
+}
+
+.sort .sort-item:active {
+    border: 0px;
+    color: var(--basic-red);
+}
+
+
+.sort .sort-triangle:active {
+    fill: var(--basic-red);
+}
+
+.sort-title {
+    margin-left: 21px;
+}
+
 .sort-list {
     list-style: none;
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.sort li {
+    margin-left: 60px;
+}
+
+.sort li:last-child {
+    margin-left: 21px;
+    margin-right: 14px;
 }
 
 .popular-product a {
@@ -1303,6 +1367,7 @@ color: var(--basic-black);
 
 .text {
     background-color: var(--basic-background-grey);
+    width: 100vw;
     grid-column: 1 / -1;
 }
 
