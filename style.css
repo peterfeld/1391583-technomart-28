@@ -36,7 +36,9 @@
     --basic-button-red: #CA2C37;
     --basic-button-red-dark: #BA2732;
     --catalog-grey-limited: #e5e5e5;
-
+    --catalog-button-green: #367315;
+    --catalog-button-extra-green: #5FBB2D;
+    --catalog-button-dark-green: #518534;
 }
 
 
@@ -219,19 +221,18 @@ img {
     opacity: 1;
 }
 
-.header-search:focus + .icon-search,
-.header-search:hover + .icon-search {
+.header-search:focus + .search-button,
+.header-search:hover + .search-button {
     opacity: 1;
 }
 
 .header-search:focus {
+    border: 0;
     background-color:var(--basic-white);
-    outline-offset: -1px;
-    outline: 3px solid var(--basic-white);
 }
 
-.header-search:focus .icon-search {
-    --basic-white: var(--basic-red);
+.header-search:focus .search-button {
+    color: var(--basic-red);
 }
 
 .header-search:focus::placeholder {
@@ -432,6 +433,9 @@ img {
 nav .main-navigation {
     margin: 0;
     padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 24px;
     padding-top: 15px;
     padding-bottom: 18px;
     display: flex;
@@ -440,14 +444,6 @@ nav .main-navigation {
     margin-top: 40px;
 }
 
-
-.main-navigation {
-    list-style: none;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0px;
-    padding: 0px;
-}
 
 .main-navigation a {
     color: var(--basic-white);
@@ -1013,7 +1009,10 @@ nav .main-navigation {
 .price-controls {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+
+
 
 .price-controls input {
     font-family: inherit;
@@ -1267,6 +1266,12 @@ nav .main-navigation {
     width: 220px;
     height: 318px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.catalog-list-page li,
+.catalog-list li {
+    position: relative;
 }
 
 .catalog-list {
@@ -1296,7 +1301,7 @@ nav .main-navigation {
 }
 
 .catalog-item-link h3 {
-    order: 1;
+    order: 3;
     font-family: "PT Sans", Arial, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -1322,6 +1327,92 @@ nav .main-navigation {
     padding-top: 6px;
 }
 
+.hidden-button {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 135px;
+    height: 38px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.catalog-get {
+    background-color: var(--basic-green);
+    color: var(--basic-white);
+    box-shadow: inset 0px -3px 0px var(--catalog-button-green);
+    border-radius: 2px;
+    padding: 10px 40px 10px 53px;
+    position: relative;
+}
+
+.catalog-get::before {
+    content: "";
+    background-image: url(img/icon-cart.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 23px;
+    opacity: 0.7;
+}
+
+.catalog-bookmarks {
+    color: var(--basic-light-blue);
+    border: 3px solid var(--basic-green);
+    padding: 8px 15px 6px 15px;
+}
+
+.catalog-get:focus,
+.catalog-get:hover {
+    background-color: var(--catalog-button-extra-green);
+}
+
+.catalog-get:active {
+    background-color: var(--catalog-button-dark-green);
+}
+
+.catalog-bookmarks:hover,
+.catalog-bookmarks:focus {
+    border: 3px solid var(--basic-light-blue);
+}
+
+.catalog-bookmarks:active {
+    border: 3px solid var(--basic-light-blue);
+    opacity: 0.5;
+}
+
+
+
+.catalog-item-buttons {
+    order: 0;
+    position: absolute;
+    left: 13px;
+    top: 38px;
+    flex-wrap: wrap;
+    background-color: var(--basic-white);
+    width: 147px;
+    height: 100px;
+    padding-left: 30px;
+    display: none;
+}
+
+.catalog-item-buttons-on {
+    display: block;
+}
+
+.catalog-item:hover + .catalog-item-buttons {
+    display: block;
+}
+
+.catalog-item:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
 
 .catalog-item-price {
     margin: 0px;
@@ -1703,6 +1794,10 @@ nav .main-navigation {
     padding-bottom: 35px;
 }
 
+.copyright {
+    width: 230px;
+}
+
 .social {
     margin-left: -85px;
 }
@@ -1769,9 +1864,10 @@ nav .main-navigation {
 }
 
 .feedback {
-    /* position: fixed;
-    left: 282px;
-    top: 2369px; */
+    position: absolute;
+    left: 30vw;
+    top: -350px; 
+    background-color: var(--basic-white);
     box-sizing: border-box;
     border-top: 7px solid var(--basic-red-light);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
