@@ -757,18 +757,20 @@ nav .main-navigation {
 }
 
 .slider-button-off {
+    padding: 0px;
     background-color: var(--basic-white);
     border-radius: 50%;
-    width: 9px;
+    width: 10px;
     height: 10px;
     border: none;
     margin-right: 5px;
 }
 
 .slider-button-on {
+    padding: 0px;
     background-color: var(--basic-white);
     border-radius: 50%;
-    width: 9px;
+    width: 10px;
     height: 10px;
     border: none;
     position: relative;
@@ -776,13 +778,14 @@ nav .main-navigation {
 
 .slider-button-on::after{
     content: "";
+    padding: 0px;
     width: 6px;
     height: 6px;
     background-color: var(--basic-red);
     border-radius: 50%;
     position: absolute;
     top: 2px;
-    left: 3px;
+    left: 2px;
 } 
 
 .section-wrapper {
