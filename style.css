@@ -79,7 +79,7 @@ img {
 .header-top .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
 } 
@@ -120,14 +120,15 @@ img {
     width: 271px;
 }
 
-.header-top .icon-search {
+.search-button{
     width: 17px;
     height: 17px;
     color: var(--basic-white);
-    opacity: 0.3;
+    opacity: 0.3; 
 }
 
-.header-top svg {
+.icon-bookmarks,
+.icon-cart {
     opacity: 0.3;
 }
 
@@ -152,8 +153,8 @@ img {
 
     padding-top: 9px;
     padding-bottom: 9px;
-    padding-left: 43px;
-    padding-right: 24px;
+    padding-left: 39px;
+    padding-right: 42px;
 
     position: relative;
 }
@@ -170,9 +171,11 @@ img {
     display: flex;
     padding-top: 9px;
     padding-bottom: 9px;
-    padding-left: 49px;
-    padding-right: 26px;
+    padding-left: 32px;
+    padding-right: 24px;
     position: relative;
+    min-width: 136px;
+box-sizing: border-box;
 }
 
 .icon-cart {
@@ -180,7 +183,7 @@ img {
     width: 15px;
     height: 15px;
     top: 13px;
-    left: 25px;
+    left: 11px;
 }
 
 .cart-catalog .icon-cart {
@@ -199,11 +202,6 @@ img {
 
 .header-top .cart-catalog {
     background-color: var(--basic-red);
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 38px;
-    padding-right: 20px;
-    margin-right: -5px;
 }
 
 .search-button {
@@ -274,7 +272,7 @@ img {
 
 .header-bottom-wrapper {
     background-color: var(--basic-background-grey);
-    padding-top: 46px;
+    padding-top: 47px;
     padding-bottom: 60px;
 }
 
@@ -412,7 +410,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin: 0px;
-    margin-top: 12px;
+    margin-top: 10px;
     margin-right: 32px;
     position: relative;
 }
@@ -502,8 +500,8 @@ nav .main-navigation {
 .index-column {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 69px;
-    padding-top: 68px;
+    margin-bottom: 71px;
+    padding-top: 69px;
 }
 
 .about-us {
@@ -524,7 +522,7 @@ nav .main-navigation {
 }
 
 .about-us p:first-of-type {
-    margin-bottom: 25px; 
+    margin-bottom: 28px; 
 }
 
 .about-us h2 {
@@ -543,8 +541,8 @@ nav .main-navigation {
     font-size: 18px;
     line-height: 24px;
     margin: 0px;
-    margin-top: 3px;
-    margin-bottom: 28px;
+    margin-top: 4px;
+    margin-bottom: 32px;
 }
 
 .transport li {
@@ -750,7 +748,7 @@ nav .main-navigation {
     padding-top: 23px;
     padding-left: 24px;
     padding-bottom: 178px;
-
+    display: block;
 }
 
 
@@ -762,14 +760,49 @@ nav .main-navigation {
     padding-top: 23px;
     padding-left: 24px;
     padding-bottom: 178px;
-    display: none;
+    display: none; 
 }
+
+.slider-buttons {
+    position: absolute;
+    top: 217px;
+    left: 294px;
+}
+
+.slider-button-off {
+    background-color: var(--basic-white);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: none;
+    margin-right: 5px;
+}
+
+.slider-button-on {
+    background-color: var(--basic-white);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: none;
+    position: relative;
+}
+
+.slider-button-on::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--basic-red);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+} 
+
 
 .section-wrapper {
     background-color: var(--basic-grey);
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     margin-bottom: 20px;
 }
 
@@ -781,7 +814,7 @@ nav .main-navigation {
 }
 
 .section-wrapper a {
-    margin-right: 14px;
+    margin-right: 16px;
 }
 
 .promo-catalog {
@@ -882,7 +915,7 @@ nav .main-navigation {
 
 .breadcrumbs li {
     position: relative;
-    margin-right: 40px;
+    margin-right: 42px;
 }
 
 .breadcrumbs li::after {
@@ -914,7 +947,7 @@ nav .main-navigation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 145px 145px;
-    column-gap: 20px;
+    column-gap: 18px;
     row-gap: 20px;
 }
 
@@ -975,7 +1008,7 @@ nav .main-navigation {
     text-transform: uppercase;
     padding: 10px 151px 10px 18px;
     background-color: var(--catalog-grey-light);
-    margin-bottom: 14px;
+    margin-bottom: 13px;
 }
 
 
@@ -993,8 +1026,8 @@ nav .main-navigation {
 
 .range-filter {
     width: 220px;
-    margin-top: 10px;
-    padding-bottom: 27px;
+    margin-top: 12px;
+    padding-bottom: 26px;
     border-bottom: 1px solid var(--basic-grey-dark); 
 }
 
@@ -1059,8 +1092,9 @@ nav .main-navigation {
 .price-controls input {
     font-family: inherit;
     font-size: inherit;
-    width: 75px;
-    padding: 10px;
+    width: 95px;
+    padding: 10px 5px 10px 21px;
+    box-sizing: border-box;
     text-align: center;
     color: var(--basic-black);
     border: none;
@@ -1218,7 +1252,7 @@ nav .main-navigation {
     grid-column: 2 ;
     grid-row: 3 ;
     display: flex;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
 .sort .sort-item {
@@ -1294,7 +1328,7 @@ nav .main-navigation {
 
 .popular-manufacturer a {
     padding-left: 39px;
-    padding-right: 38px;
+    padding-right: 39px;
 }
 
 .catalog {
@@ -1323,7 +1357,7 @@ nav .main-navigation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
 }
 
 .catalog-list-page {
@@ -1365,7 +1399,7 @@ nav .main-navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     padding-top: 6px;
 }
 
@@ -1434,18 +1468,19 @@ nav .main-navigation {
 .catalog-item-buttons {
     order: 0;
     position: absolute;
-    left: 13px;
-    top: 38px;
-    flex-wrap: wrap;
-    background-color: var(--basic-white);
-    width: 147px;
-    height: 100px;
-    padding-left: 30px;
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--basic-white);
+    width: 218px;
+    height: 162px;
+    padding-left: 41px;
+    padding-right: 44px;
+    box-sizing: border-box;
 }
 
 .catalog-item:hover .catalog-item-buttons {
-    display: block;
+    display: flex;
 }
 
 .catalog-item:hover {
@@ -1465,7 +1500,7 @@ nav .main-navigation {
     color: var(--basic-grey-extra-dark);
     display: flex;
     justify-content: center;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
     height: 17px;
 }
 
@@ -1502,7 +1537,7 @@ nav .main-navigation {
     width: 70px;
     height: 70px;
     position: absolute;
-    top: -1px;
+    top: 1px;
     left: 149px;
 }
 
@@ -1560,7 +1595,7 @@ nav .main-navigation {
 .text-wrapper {
     width: 940px;
     margin: 0 auto;
-    padding-top: 65px;
+    padding-top: 66px;
     padding-bottom: 72px;
 }
 
@@ -1635,8 +1670,8 @@ nav .main-navigation {
 
 
 .services .container {
-    padding-top: 67px;
-    padding-bottom: 103px;
+    padding-top: 66px;
+    padding-bottom: 100px;
 }
 
 .services-wrapper {
@@ -1772,7 +1807,7 @@ nav .main-navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 53px;
+    padding-bottom: 55px;
 }
 
 .logo-wrapper-footer {
@@ -1875,7 +1910,7 @@ nav .main-navigation {
 }
 
 .social {
-    margin-left: 35px;
+    margin-left: 41px;
 }
 
 .footer-social {
