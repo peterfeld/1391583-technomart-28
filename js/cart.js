@@ -10,7 +10,6 @@ for (let itemGet of itemsGet) {
     });
 }
 
-
 cartClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     cartPopup.classList.remove("modal-show");
