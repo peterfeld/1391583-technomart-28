@@ -980,7 +980,6 @@ nav .main-navigation {
 
 
 .filters {
-    grid-column-start: 0;
     grid-row-start: 3;
     grid-row-end: 6;
 }
