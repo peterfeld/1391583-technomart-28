@@ -605,7 +605,7 @@ nav .main-navigation {
 }
 
 .promo-matelials::before {
-    content: url(img/indexmateriali.svg);
+    content: url(img/index-materiali.svg);
     width: 44px;
     height: 65px;
     position: absolute;
@@ -628,7 +628,7 @@ nav .main-navigation {
 }
 
 .promo-tools::before{
-    content: url(img/indexinstrumenti.svg);
+    content: url(img/index-instrumenti.svg);
     width: 44px;
     height: 65px;
     position: absolute;
@@ -641,7 +641,7 @@ nav .main-navigation {
 }
 
 .promo-technic::before {
-    content: url(img/indextehnika.svg);
+    content: url(img/index-tehnika.svg);
     width: 78px;
     height: 62px;
     position: absolute;
@@ -654,7 +654,7 @@ nav .main-navigation {
 }
 
 .promo-discounts::before{
-    content: url(img/indexskidki.svg);
+    content: url(img/index-skidki.svg);
     width: 59px;
     height: 72px;
     position: absolute;
@@ -667,7 +667,7 @@ nav .main-navigation {
 }
 
 .promo-delivery::before{
-    content: url(img/indexdostavka.svg);
+    content: url(img/index-dostavka.svg);
     width: 78px;
     height: 63px;
     position: absolute;
