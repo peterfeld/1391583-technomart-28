@@ -1444,10 +1444,6 @@ nav .main-navigation {
     display: none;
 }
 
-.catalog-item-buttons-on {
-    display: block;
-}
-
 .catalog-item:hover .catalog-item-buttons {
     display: block;
 }
