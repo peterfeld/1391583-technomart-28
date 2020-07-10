@@ -312,7 +312,7 @@ img {
 
 .tel-wrapper::before {
     content: "";
-    background-image: url(img/icon-phone.svg);
+    background-image: url(../img/icon-phone.svg);
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
@@ -594,7 +594,7 @@ nav .main-navigation {
 }
 
 .promo-matelials::before {
-    content: url(img/index-materiali.svg);
+    content: url(../img/index-materiali.svg);
     width: 44px;
     height: 65px;
     position: absolute;
@@ -603,7 +603,7 @@ nav .main-navigation {
 }
 
 .promo-matelials::after {
-    content: url(img/icon-new.png);
+    content: url(../img/icon-new.png);
     width: 70px;
     height: 70px;
     position: absolute;
@@ -616,7 +616,7 @@ nav .main-navigation {
 }
 
 .promo-tools::before{
-    content: url(img/index-instrumenti.svg);
+    content: url(../img/index-instrumenti.svg);
     width: 44px;
     height: 65px;
     position: absolute;
@@ -629,7 +629,7 @@ nav .main-navigation {
 }
 
 .promo-technic::before {
-    content: url(img/index-tehnika.svg);
+    content: url(../img/index-tehnika.svg);
     width: 78px;
     height: 62px;
     position: absolute;
@@ -642,7 +642,7 @@ nav .main-navigation {
 }
 
 .promo-discounts::before{
-    content: url(img/index-skidki.svg);
+    content: url(../img/index-skidki.svg);
     width: 59px;
     height: 72px;
     position: absolute;
@@ -655,7 +655,7 @@ nav .main-navigation {
 }
 
 .promo-delivery::before{
-    content: url(img/index-dostavka.svg);
+    content: url(../img/index-dostavka.svg);
     width: 78px;
     height: 63px;
     position: absolute;
@@ -729,7 +729,7 @@ nav .main-navigation {
 }
 
 .promo-punchs {
-    background-image: url(img/promo-punchs.jpg);
+    background-image: url(../img/promo-punchs.jpg);
     background-color: var(--catalog-grey-extra-dark);
     background-repeat: no-repeat no-repeat;
     position: relative;
@@ -740,7 +740,7 @@ nav .main-navigation {
 }
 
 .promo-drills {
-    background-image: url(img/promo-drills.jpg);
+    background-image: url(../img/promo-drills.jpg);
     background-color: var(--catalog-grey-extra-dark);
     background-repeat: no-repeat no-repeat;
     position: relative;
@@ -752,14 +752,14 @@ nav .main-navigation {
 
 .slider-buttons {
     position: absolute;
-    top: 217px;
-    left: 294px;
+    top: 215px;
+    left: 295px;
 }
 
 .slider-button-off {
     background-color: var(--basic-white);
     border-radius: 50%;
-    width: 10px;
+    width: 9px;
     height: 10px;
     border: none;
     margin-right: 5px;
@@ -768,7 +768,7 @@ nav .main-navigation {
 .slider-button-on {
     background-color: var(--basic-white);
     border-radius: 50%;
-    width: 10px;
+    width: 9px;
     height: 10px;
     border: none;
     position: relative;
@@ -899,7 +899,7 @@ nav .main-navigation {
 }
 
 .breadcrumbs li::after {
-    content: url(img/icon-right-small.svg);
+    content: url(../img/icon-right-small.svg);
     position: absolute;
     top: 1px;
     right: -25px;
@@ -1108,7 +1108,7 @@ nav .main-navigation {
 
 .filter-input-checkbox + label::before {
     content: "";
-    background-image: url(img/checkbox-off.svg);
+    background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: -35px;
@@ -1125,7 +1125,7 @@ nav .main-navigation {
 
 .filter-input-checkbox:checked + label::before { 
     content: "";
-    background-image: url(img/checkbox-on.svg);
+    background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: -35px;
@@ -1146,7 +1146,7 @@ nav .main-navigation {
 }
 
 .filter-input-radio + label::before {
-    content: url(img/radio-off.svg);
+    content: url(../img/radio-off.svg);
     position: absolute;
     left: -35px;
     top: -3px;
@@ -1156,7 +1156,7 @@ nav .main-navigation {
 }
 
 .filter-input-radio:checked + label::before {
-    content: url(img/radio-on.svg);
+    content: url(../img/radio-on.svg);
     position: absolute;
     left: -35px;
     top: -3px;
@@ -1405,7 +1405,7 @@ nav .main-navigation {
 
 .catalog-get::before {
     content: "";
-    background-image: url(img/icon-cart.svg);
+    background-image: url(../img/icon-cart.svg);
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
@@ -1478,7 +1478,7 @@ nav .main-navigation {
 }
 
 .item-sell-wrapper {
-    background-image: url(img/red-button.svg);
+    background-image: url(../img/red-button.svg);
     background-repeat: no-repeat;
     width: 141px;
     height: 38px;
@@ -1506,11 +1506,11 @@ nav .main-navigation {
 
 .new-item::after {
     content: "";
-    background-image: url(img/icon-new.png);
+    background-image: url(../img/icon-new.png);
     width: 70px;
     height: 70px;
     position: absolute;
-    top: 1px;
+    top: -1px;
     left: 149px;
 }
 
@@ -1648,7 +1648,7 @@ nav .main-navigation {
 }
 
 .services-delivery-description::after {
-    content: url(img/services-delivery.png);
+    content: url(../img/services-delivery.png);
     width: 468px;
     height: 261px;
     position: absolute;
@@ -1657,7 +1657,7 @@ nav .main-navigation {
 }
 
 .services-guarantee-description::after {
-    content: url(img/services-guarantee.png);
+    content: url(../img/services-guarantee.png);
     width: 465px;
     height: 285px;
     position: absolute;
@@ -1666,7 +1666,7 @@ nav .main-navigation {
 }
 
 .services-credit-description::after {
-    content: url(img/services-credit.png);
+    content: url(../img/services-credit.png);
     width: 465px;
     height: 285px;
     position: absolute;
@@ -1744,7 +1744,7 @@ nav .main-navigation {
     width: 10px;
     height: 279px;
     background: rgba(0, 0, 0, 0.0001);
-    background-image: url(img/services-line.png);
+    background-image: url(../img/services-line.png);
     background-repeat: no-repeat;
     mix-blend-mode: normal;
     position: absolute;
@@ -1779,7 +1779,7 @@ nav .main-navigation {
 
 .logo-wrapper-footer {
     background-color: var(--basic-red);
-    background-image: url(img/logo-footer.png);
+    background-image: url(../img/logo-footer.png);
     background-repeat: no-repeat;
     width: 220px; 
     height: 68px;
@@ -2039,7 +2039,7 @@ nav .main-navigation {
     width: 21px;
     height: 21px;
     background-color: transparent;
-    background-image: url(img/icon-close.svg);
+    background-image: url(../img/icon-close.svg);
     border: 0;
     cursor: pointer;
 }
@@ -2070,7 +2070,7 @@ iframe {
     width: 21px;
     height: 21px;
     background-color: transparent;
-    background-image: url(img/icon-close.svg);
+    background-image: url(../img/icon-close.svg);
     border: 0;
     cursor: pointer;
 }
@@ -2111,7 +2111,7 @@ iframe {
     width: 21px;
     height: 21px;
     background-color: transparent;
-    background-image: url(img/icon-close.svg);
+    background-image: url(../img/icon-close.svg);
     border: 0;
     cursor: pointer;
 }
@@ -2127,7 +2127,7 @@ iframe {
 
 .popup-cart p::before {
     content: "";
-    background-image: url(img/icon-mark.svg);
+    background-image: url(../img/icon-mark.svg);
     background-repeat: no-repeat;
     background-color: transparent;
     width: 66px;
