@@ -1580,6 +1580,7 @@ nav .main-navigation {
     content: "New";
     text-align: center;
     text-transform: uppercase;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-white);
