@@ -1430,6 +1430,7 @@ nav .main-navigation {
     align-items: center;
     padding-bottom: 11px;
     padding-top: 1px;
+    padding-right: 10px
 }
 
 .hidden-button {
@@ -1508,7 +1509,7 @@ nav .main-navigation {
 }
 
 .catalog-item:hover .catalog-item-buttons,
-.catalog-item:focus .catalog-item-buttons {
+.catalog-item:focus-within .catalog-item-buttons {
     display: flex;
 }
 
