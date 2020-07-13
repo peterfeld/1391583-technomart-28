@@ -1689,6 +1689,8 @@ nav .main-navigation {
 }
 
 .contacts .button {
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -1778,6 +1780,7 @@ nav .main-navigation {
 }
 
 .services-list .services-button {
+    display: flex;
     padding: 0px;
     border: none;
     font-weight: bold;
@@ -1790,6 +1793,7 @@ nav .main-navigation {
     padding-left: 22px;
     padding-top: 14px;
     padding-bottom: 18px;
+    box-sizing: border-box;
     box-shadow: 0px 1px 0px var(--basic-blue), inset 0px 1px 0px var(--servis-blue); 
 }
 
@@ -1799,8 +1803,8 @@ nav .main-navigation {
     box-shadow: 0px 1px 0px var(--basic-white);
 }
 
-.services-list button:focus:not(.services-delivery),
-.services-list button:hover:not(.services-delivery) {
+.services-list a:focus:not(.services-delivery),
+.services-list a:hover:not(.services-delivery) {
     background-color: var(--basic-blue);
 }
 
