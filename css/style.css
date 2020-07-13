@@ -389,12 +389,36 @@ img {
     background-color: var(--basic-white);
     padding: 12px 57px;
     display: flex;
+    fill: var(--catalog-grey-dark);
 }
 
 .icon-user {
     position: absolute;
     top: 13px;
     left: 15px;
+}
+
+.link-user:hover svg,
+.link-user:focus svg {
+    fill: var(--basic-light-blue);
+}
+
+.link-user:hover + .link-exit,
+.link-user:focus + .link-exit {
+    color: var(--basic-light-blue);
+}
+
+.link-exit:hover,
+.link-exit:focus {
+    color: var(--basic-light-blue);
+}
+
+.link-user:active svg {
+    fill: var(--catalog-grey-dark);
+}
+
+.link-user:active +.link-exit {
+    color: var(--catalog-grey-dark)
 }
 
 .user-menu {
@@ -436,12 +460,13 @@ img {
     position: absolute;
     right: 17px;
     top: 14px;
+    color: var(--catalog-grey-dark);
 }
 
 .user-menu a:focus,
 .user-menu a:hover {
     color: var(--basic-red);
-}
+} 
 
 .user-navigation-catalog a:active,
 .user-menu a:active {
@@ -1182,6 +1207,13 @@ nav .main-navigation {
     opacity: 1;
 }
 
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:checked:disabled + label::before,
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label::before{
+    opacity: 0.3;
+}
+
 .filter-button {
     font-size: 13px;
     line-height: 18px;
@@ -1883,6 +1915,7 @@ nav .main-navigation {
 .footer-navigation a:active,
 .special-navigation a:active {
     opacity: 0.5;
+    text-decoration: none;
 }
 
 .footer-bottom {
@@ -1962,6 +1995,7 @@ nav .main-navigation {
 
 .develop a:active {
     color: var(--basic-red);
+    text-decoration: none;
 }
 
 .visually-hidden {
