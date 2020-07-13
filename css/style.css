@@ -11,7 +11,7 @@
     --basic-black: #000000;
     --basic-black-rgb: 0, 0, 0;
     --basic-yellow: #ffbf47;
-    --basic-azure: #3BBCE3;
+    --basic-azure: #3bbce3;
     --basic-lilac: #dc91d8;
     --basic-green-light: #8ed78f;
     --basic-yellow-light: #ffc047;
@@ -421,8 +421,8 @@ img {
     fill: var(--catalog-grey-dark);
 }
 
-.link-user:active +.link-exit {
-    color: var(--catalog-grey-dark)
+.link-user:active + .link-exit {
+    color: var(--catalog-grey-dark);
 }
 
 .user-menu {
@@ -470,7 +470,7 @@ img {
 .user-menu a:focus,
 .user-menu a:hover {
     color: var(--basic-red);
-} 
+}
 
 .user-navigation-catalog a:active,
 .user-menu a:active {
@@ -847,12 +847,12 @@ nav .main-navigation {
 .promo-catalog a:focus,
 .promo-special a:hover,
 .promo-special a:focus {
-    background-color: rgba(var(--catalog-grey-dark-rgb), .3);
+    background-color: rgba(var(--catalog-grey-dark-rgb), 0.3);
 }
 
 .promo-catalog a:active,
 .promo-special a:active {
-    background-color: rgba(var(--basic-grey-extra-dark-rgb), .3);
+    background-color: rgba(var(--basic-grey-extra-dark-rgb), 0.3);
 }
 
 .promo-item a:active {
@@ -983,7 +983,7 @@ nav .main-navigation {
 }
 
 .special-manufacturer {
-    margin-top: -3px;
+    margin-top: -7px;
 }
 
 .perforator-wrapper {
@@ -1097,15 +1097,15 @@ nav .main-navigation {
     left: 104px;
 }
 
-.price-controls input[type=number]::-webkit-inner-spin-button,
-.price-controls input[type=number]::-webkit-outer-spin-button {
+.price-controls input[type="number"]::-webkit-inner-spin-button,
+.price-controls input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     margin: 0;
 }
 
-.price-controls input[type=number]{
+.price-controls input[type="number"] {
     -moz-appearance: textfield;
 }
 
@@ -1123,7 +1123,6 @@ nav .main-navigation {
     border: none;
     background-color: var(--catalog-grey-light);
 }
-
 
 .filter-option label {
     position: relative;
@@ -1222,7 +1221,7 @@ nav .main-navigation {
 .filter-input-radio:disabled + label::before,
 .filter-input-radio:checked:disabled + label::before,
 .filter-input-checkbox:disabled + label::before,
-.filter-input-checkbox:checked:disabled + label::before{
+.filter-input-checkbox:checked:disabled + label::before {
     opacity: 0.3;
 }
 
@@ -1442,11 +1441,11 @@ nav .main-navigation {
     align-items: center;
     padding-bottom: 11px;
     padding-top: 1px;
-    padding-right: 10px
+    padding-right: 10px;
 }
 
 .hidden-button {
-    font-family: "Cuprum", Arial, sans-serif;;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -1583,7 +1582,7 @@ nav .main-navigation {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
-    color: var(--basic-white); 
+    color: var(--basic-white);
     transform: rotate(45deg);
     width: 67px;
     height: 18px;
@@ -1807,7 +1806,7 @@ nav .main-navigation {
     padding-top: 14px;
     padding-bottom: 18px;
     box-sizing: border-box;
-    box-shadow: 0px 1px 0px var(--basic-blue), inset 0px 1px 0px var(--servis-blue); 
+    box-shadow: 0px 1px 0px var(--basic-blue), inset 0px 1px 0px var(--servis-blue);
 }
 
 .services-list .services-delivery {
