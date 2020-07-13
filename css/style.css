@@ -1110,8 +1110,11 @@ nav .main-navigation {
 }
 
 .price-controls input {
-    font-family: inherit;
-    font-size: inherit;
+    font-family: "PT Sans", Arial. sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
     width: 95px;
     padding: 9px 12px 10px 8px;
     box-sizing: border-box;
