@@ -560,6 +560,7 @@ nav .main-navigation {
     margin: 0px;
     margin-top: 4px;
     margin-bottom: 28px;
+    margin-left: -3px;
 }
 
 .transport li {
@@ -979,6 +980,10 @@ nav .main-navigation {
 .manufacturer a:active {
     opacity: 0.5;
     box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
+}
+
+.special-manufacturer {
+    margin-top: -3px;
 }
 
 .perforator-wrapper {
