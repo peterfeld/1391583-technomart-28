@@ -1238,7 +1238,7 @@ nav .main-navigation {
     grid-column: 2;
     grid-row: 3;
     display: flex;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 }
 
 .sort .sort-item {
@@ -1496,7 +1496,8 @@ nav .main-navigation {
     height: 17px;
 }
 
-.item-sell-wrapper {
+.catalog-item-sell-price {
+    display: flex;
     background-image: url(../img/red-button.svg);
     background-repeat: no-repeat;
     width: 141px;
@@ -1505,18 +1506,11 @@ nav .main-navigation {
     padding-bottom: 10px;
     padding-left: 32px;
     margin-left: 46px;
-}
-
-.catalog-item-sell-price {
-    margin: 0px;
-    padding: 0px;
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
     color: var(--basic-white);
-    background-color: var(--basic-red);
-    width: max-content;
 }
 
 .new-item {
@@ -1604,7 +1598,7 @@ nav .main-navigation {
     width: 940px;
     margin: 0 auto;
     padding-top: 65px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
 }
 
 .text-title {
@@ -1932,6 +1926,10 @@ nav .main-navigation {
     height: 44px;
     display: flex;
     justify-content: center;
+}
+
+.footer-social li {
+    margin-left: 2px;
 }
 
 .footer-social a:focus,
