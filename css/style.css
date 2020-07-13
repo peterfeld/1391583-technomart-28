@@ -6,8 +6,10 @@
     --basic-red: #ee3643;
     --basic-extra-dark-red: #8d1e26;
     --basic-white: #ffffff;
+    --basic-white-rgb: 255, 255, 255;
     --basic-green: #63a63e;
     --basic-black: #000000;
+    --basic-black-rgb: 0, 0, 0;
     --basic-yellow: #ffbf47;
     --basic-azure: #3BBCE3;
     --basic-lilac: #dc91d8;
@@ -42,6 +44,8 @@
     --catalog-button-extra-green: #5fbb2d;
     --catalog-button-dark-green: #518534;
     --popup-grey: #f1f1f1;
+    --popup-grey-rgb: 41, 52, 73;
+    --servis-blue: #405069;
 }
 
 /* Global */
@@ -508,7 +512,7 @@ nav .main-navigation {
 
 .main-navigation a:active {
     background-color: var(--basic-blue);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(var(--basic-black-rgb), 0.25);
     opacity: 0.7;
 }
 
@@ -596,7 +600,7 @@ nav .main-navigation {
     text-align: center;
     text-transform: uppercase;
     color: var(--basic-white);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(var(--basic-white-rgb), 0.3);
     box-sizing: border-box;
     width: 135px;
     height: 38px;
@@ -969,12 +973,12 @@ nav .main-navigation {
 
 .manufacturer a:focus,
 .manufacturer a:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
 }
 
 .manufacturer a:active {
     opacity: 0.5;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
 }
 
 .perforator-wrapper {
@@ -1509,7 +1513,7 @@ nav .main-navigation {
 }
 
 .catalog-item:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
 }
 
 .catalog-item-price {
@@ -1786,7 +1790,7 @@ nav .main-navigation {
     padding-left: 22px;
     padding-top: 14px;
     padding-bottom: 18px;
-    box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+    box-shadow: 0px 1px 0px var(--basic-blue), inset 0px 1px 0px var(--servis-blue); 
 }
 
 .services-list .services-delivery {
@@ -1804,7 +1808,7 @@ nav .main-navigation {
     content: "";
     width: 10px;
     height: 279px;
-    background: rgba(0, 0, 0, 0.0001);
+    background: rgba(var(--basic-black-rgb), 0.0001);
     background-image: url(../img/services-line.png);
     background-repeat: no-repeat;
     mix-blend-mode: normal;
@@ -2019,7 +2023,7 @@ nav .main-navigation {
     background-color: var(--basic-white);
     box-sizing: border-box;
     border-top: 7px solid var(--basic-red-light);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
     width: 620px;
     height: 430px;
     display: none;
@@ -2123,7 +2127,7 @@ nav .main-navigation {
     height: 449px;
     box-sizing: border-box;
     border-top: 7px solid var(--basic-red-light);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
     display: none;
 }
 
@@ -2154,7 +2158,7 @@ nav .main-navigation {
     width: 620px;
     height: 282px;
     box-sizing: border-box;
-    box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75);
+    box-shadow: 0px 20px 40px rgba(var(--popup-grey-rgb), 0.75);
     border-top: 7px solid var(--basic-red);
     padding-top: 73px;
     display: none;
