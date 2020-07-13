@@ -909,7 +909,7 @@ nav .main-navigation {
     flex-wrap: wrap;
     list-style: none;
     grid-column: 1 / -1;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 21px;
 }
 
@@ -1045,7 +1045,7 @@ nav .main-navigation {
     height: 41px;
     position: relative;
     background-color: var(--catalog-grey-light);
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
