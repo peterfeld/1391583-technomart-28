@@ -1224,6 +1224,7 @@ nav .main-navigation {
 }
 
 .filter-button {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1346,8 +1347,11 @@ nav .main-navigation {
 }
 
 .sort li:first-child {
-    margin-left: 61px;
-    margin-right: 40px;
+    margin-right: 24px;
+}
+
+.sort li:nth-child(2) {
+    margin-right: 16px;
 }
 
 .sort li:last-child {
@@ -1566,7 +1570,7 @@ nav .main-navigation {
     width: 70px;
     height: 70px;
     position: absolute;
-    top: -1px;
+    top: 0px;
     left: 149px;
 }
 
